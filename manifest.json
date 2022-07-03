@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Link Grouper",
+    "version": "0.1",
+    "background":{
+        "service_worker": "./dist/background.js"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
