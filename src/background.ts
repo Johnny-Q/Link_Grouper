@@ -91,7 +91,7 @@ chrome.runtime.onMessage.addListener(
                             "method": "POST",
                             "headers": {
                                 "Content-Type": "application/json",
-                                "Authorization": "Bearer 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"
+                                "Authorization": "Bearer ${OPEN_AI_KEY"
                             },
                             "body": JSON.stringify({
                                 "model": "text-davinci-002",
