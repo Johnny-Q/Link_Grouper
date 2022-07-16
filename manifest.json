@@ -5,12 +5,15 @@
     "background":{
         "service_worker": "./dist/background.js"
     },
+    "action":{
+        "default_popup": "./public/index.html"
+    },
     "permissions": [
         "tabs"
     ],
     "content_scripts":[
         {
-            "matches":["https://www.google.com/search?*"],
+            "matches":["https://www.google.com/search?*", "https://search.brave.com/search?*", "https://duckduckgo.com/?q=*", "https://www.youtube.com/results?search_query=*"],
             "js":["./dist/searchGrabber.js"]
         }
     ]
